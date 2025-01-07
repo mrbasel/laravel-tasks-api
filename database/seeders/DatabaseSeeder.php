@@ -14,14 +14,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
-
-        $user1 = User::factory()->create([
+        $user = User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
+            'password' => bcrypt('test123')
         ]);
-        $user1->tasks()->saveMany([
-            new Task(['title' => 'Prepare lunch'])
+        $user->tasks()->saveMany([
+            new Task(['title' => 'Prepare lunch']),
+            new Task(['title' => 'Wash dishes']),
+            new Task(['title' => 'Study']),
+            new Task(['title' => 'Visit family']),
         ]);
     }
 }
