@@ -13,5 +13,5 @@ Route::controller(AuthApiController::class)->group(function () {
 Route::middleware(['auth:sanctum'])->group(function () {
     Route::get('/tasks', [TasksController::class, 'index']);
     Route::post('/tasks', [TasksController::class, 'store']);
-    Route::post('/tasks/{id}', [TasksController::class, 'update']);
+    Route::put('/tasks/{task}', [TasksController::class, 'update']);
 });
