@@ -132,7 +132,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|z9vIWdB70xSEAp3K3Zz8MOIOvcKb2CL7NDgx7pTQ02911646",
+							"value": "2|tZyewz3LJfqmDTP8Nt5MVfm32rwfZpi1ddp4lTzTbad05166",
 							"type": "string"
 						}
 					]
@@ -177,12 +177,12 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "1|z9vIWdB70xSEAp3K3Zz8MOIOvcKb2CL7NDgx7pTQ02911646",
+							"value": "2|tZyewz3LJfqmDTP8Nt5MVfm32rwfZpi1ddp4lTzTbad05166",
 							"type": "string"
 						}
 					]
 				},
-				"method": "POST",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "Accept",
@@ -192,7 +192,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"is_completed\": false,\n    \"title\": \"Sleep\"\n}",
+					"raw": "{\n    \"is_completed\": true\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -200,7 +200,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/api/tasks/1",
+					"raw": "http://localhost/api/tasks/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -208,7 +208,7 @@
 					"path": [
 						"api",
 						"tasks",
-						"1"
+						"3"
 					]
 				}
 			},
