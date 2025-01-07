@@ -5,11 +5,11 @@
 
 | Method   | Route          | Description                      | Body                                  |
 |----------|----------------|----------------------------------|---------------------------------------|
-| POST     | /login         | Log in as user                   | `{ "email": "string", "password": "string" }` |
-| POST     | /register      | Register a new user             | `{ "name": "string", "email": "string", "password": "string" }` |
-| GET      | /tasks         | Retrieve all tasks        | N/A                                   |
-| POST     | /tasks         | Create a new task               | `{ "title": "string" }` |
-| PUT      | /tasks/{task}  | Update an existing task         | `{ "title": "string", "is_completed": "true" }` |
+| POST     | api/login         | Log in as user                   | `{ "email": "string", "password": "string" }` |
+| POST     | api/register      | Register a new user             | `{ "name": "string", "email": "string", "password": "string" }` |
+| GET      | api/tasks         | Retrieve all tasks        | N/A                                   |
+| POST     | api/tasks         | Create a new task               | `{ "title": "string" }` |
+| PUT      | api/tasks/{task}  | Update an existing task         | `{ "title": "string", "is_completed": "true" }` |
 
 
 
